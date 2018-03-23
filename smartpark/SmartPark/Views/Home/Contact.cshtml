@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "How It Works";
+}
+<style>
+    .logo {
+        color: #339966;
+        font-size: 200px;
+    }
+table {
+    width:100%;
+}
+
+dl, dd, dt {
+    padding: 5px;
+    text-align: left;
+}
+dl#d01 dd:nth-child(even) {
+    background-color: #eee;
+}
+dl#d02 dd:nth-child(odd) {
+   background-color:#fff;
+}
+dt#d03 th {
+    background-color: black;
+    color: white;
+}
+</style>
+
+<br>
+<br>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2><strong>How It Works</strong></h2><br>
+            <p>
+                    iQ Parking technology focuses on both hardware and software.
+                In order to detect whether or not a parking space is occupied,
+                we are using Simple CV and OpenCv-Python to process images when
+                a vehicle pulls into a parking spot. <br />
+               
+            <p>
+                    Currently, our team is working to implement RFID Technology, and
+                XBee Communication Modules. Ideally, the RFID chips will be
+                incorporated & built into student/staff parking passes, which will
+                transmit the users RFID chip data to a database. This would allow
+                the student body, and University staff to save time and resources
+                by issuing a single parking pass, per student, which would last
+                throughout an average 4 years per individual attending classes.
+                Moreover, the university will have the ability to set, extend, or
+                renew expiration dates on every parking tag. Consequentially, If
+                an individual attempts to park using an expired tag, the campus
+                police/parking authority could be notified of the parking lot
+                location, and the users RFID tag data, which could then be used to
+                find out the license plate data. In order to give an actual
+                parking spot location, the use of other hardware sensors would be
+                required. This concept has the potential to help increase revenue
+                flow from parking infractions, while reducing the cost incurred
+                from making & reissuing new parking tags every semester or two
+                to the entire student body.
+            </p> 
+                    Basically, our concept would obtain the students RFID data when 
+                he/she pulls into a parking lot. The user will be able to open their
+                mobile web browser, pull up the iQ Parking website (located under 
+                their favorites), and a map will display on the main page, which will 
+                show what parking spots are available, and which spots are unavailable.
+   
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2><strong>Project Specifications</strong></h2>
+
+                        <dl id="d01">
+                            <dt>Hardware</dt>
+                            <dd>- Arduino UNO Board</dd>
+                            <dd>- XBee Shield Module</dd>
+                            <dd>- Xbee USB Adapter</dd>
+                            <dd>- (2) XBee Series 2 Modules</dd>
+                            <dd>- Raspberry Pi Board</dd>
+                            <dd>- Pi/Arduino Connection Bridge</dd>
+                            <dd>- Laptop</dd>
+                            <dd>- OLED Display</dd>
+                            <dd>- Arduino RFID -SC522</dd>
+                            <dd>- Web Camera</dd>
+                            <dd>- Breadboard</dd>
+
+                            <dt id="d03"><b>Software | IDE's | Program Languages</b></dt>
+                            <dd>- XCTU Configuration Platform (Establish Xbee Network)</dd>
+                            <dd>- Arduino Sketch: C/C++</dd>
+                            <dd>- Raspberry Pi: Python</dd>
+                            <dd>- OpenCv-Python (image Processing)</dd>
+                            <dd>- SimpleCv-Python (image Processing)</dd>
+                            <dd>- ASP.Net: (Website) C#/HTML/CSS/Bootstrap</dd>
+                            <dd>- Possibly more frameworks to come</dd>
+                       </dl>
+           
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-2">
+            <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+    </div>
+</div>
+
+
+
